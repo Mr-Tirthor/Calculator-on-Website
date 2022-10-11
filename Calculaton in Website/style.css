@@ -1,0 +1,249 @@
+*{
+    margin: 0px;
+    padding: 0px;    
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.all-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    flex-direction: column;
+}
+
+.text{
+    position: absolute;
+    top: 5vh;
+}
+
+h1{
+    text-align: center;
+    font-size: 2vh;
+    margin-bottom: 5px;
+}
+
+h3{
+    text-align: center;
+    font-size: 1.2vh;
+}
+
+.box{
+    min-height: 50vh;
+    width: 50vw;
+}
+
+.modal{
+    width: 50vw;
+    display: grid;
+    grid-template-areas: 'out out out'
+    'oprantes oprantes opraters';
+    border: 1px solid black;
+}
+
+.result{
+    grid-area: out;
+    background-color: ghostwhite;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    overflow: hidden;
+    border-bottom: 1px solid black;
+}
+
+.result h3{
+    margin-right: 5px;
+    font-size: 2rem;
+    min-width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.oprantes{
+    grid-area: oprantes;
+    display: grid;
+    grid-template-areas:
+    'k l m'
+    'a b c'
+    'd e f'
+    'g h i'
+    'j j j';
+    border-right: none;
+    margin-right: 3px;
+}
+
+.a{
+    grid-area: a;
+}
+.b{
+    grid-area: b;
+}
+.c{
+    grid-area: c;
+}
+.d{
+    grid-area: d;
+}
+.e{
+    grid-area: e;
+}
+.f{
+    grid-area: f;
+}
+.g{
+    grid-area: g;
+}
+.h{
+    grid-area: h;
+}
+.i{
+    grid-area: i;
+}
+.j{
+    grid-area: j;
+    height: 6vh;
+    border: none;
+    margin: 1px;
+    margin-bottom: none;
+}
+.k{
+    grid-area: k;
+    font-size: 1rem;
+}
+.l{
+    grid-area: l;
+}
+.m{
+    grid-area: m;
+}
+
+.button{
+    min-width: 8vw;
+    min-height: 8vh;
+    border: none;
+    margin: 1px;
+    padding: 3px;
+}
+
+.oprators{
+    grid-area: opraters;
+    display: grid;
+    grid-template-areas:
+    'clear clear'
+    'plus minus'
+    'multiply divide'
+    'decimal power'
+    'equal equal';
+    border-left: none;
+}
+
+.button2{
+    min-width: 8vw;
+    min-height: 8vh;
+    border: none;
+    margin: 1px;
+}
+
+.plus{
+    grid-area: plus;
+}
+
+.minus{
+    grid-area: minus;
+}
+
+.multiply{
+    grid-area: multiply;
+}
+
+.divide{
+    grid-area: divide;
+}
+
+.power{
+    grid-area: power;
+}
+
+.decimal{
+    grid-area: decimal;
+    font-size: 1.5rem;
+}
+
+.equal{
+    grid-area: equal;
+    margin: 1px;
+    margin-bottom: 0px;
+    height: 6vh;
+    border: none;
+}
+
+.clear{
+    grid-area: clear;
+    font-size: 1vw;
+}
+
+@media screen and (max-width: 650px){
+    .clear{
+        font-size: 3vw;
+    }
+
+    .box{
+        width: 70vw;
+    }
+
+    .modal{
+        width: 70vw;
+    }
+
+    .text{
+    position: absolute;
+    top: 5vh;
+    
+}
+    
+}
+@media screen and (max-width: 1100px) and (min-width: 650px){
+    .clear{
+        font-size: 2vw;
+    }
+
+    .box{
+        width: 70vw;
+    }
+
+    .modal{
+        width: 70vw;
+    }
+
+    .text{
+    position: absolute;
+    top: 5vh;
+    
+}
+    
+}
+
+.mu-0{
+    margin-top: 0px;
+}
+
+.ml-0{
+    margin-left: 0px;
+}
+
+.mr-0{
+    margin-right: 0px;
+}
+
+.point{
+    cursor: pointer;
+}
